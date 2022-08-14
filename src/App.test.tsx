@@ -2,8 +2,12 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
+jest.mock("./OnboardingTracker", () => () => {
+  return <div>OnboardingTracker</div>;
+});
+
 test('renders learn react link', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  
+  expect(screen.getByText(/OnboardingTracker/i)).toBeInTheDocument();
 });

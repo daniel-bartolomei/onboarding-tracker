@@ -1,0 +1,18 @@
+@import "../OnboardingTracker.scss";
+
+.users {
+    @include component-style;
+
+    .user-wrapper {
+        background: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 20px;
+        min-height: 64px;
+        cursor: pointer;
+
+        span {
+            float: right;
+        }
+    }
+}

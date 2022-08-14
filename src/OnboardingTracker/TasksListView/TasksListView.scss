@@ -1,0 +1,13 @@
+@import "../OnboardingTracker.scss";
+
+.tasks-list {
+    @include component-style;
+
+    .form-check {
+        margin-top: 20px;
+        
+        &, .form-check-input, .form-check-label {
+            cursor: pointer;
+        }
+    }
+}
